@@ -1,7 +1,7 @@
 const mail = ["prova@gmail.com","Pera@gmail.com","erba@gmail.com"];
 
 let mailInserita = prompt('Scrivi la tua meil');
-let scrivi = document.getElementById("scrivi");
+const contenitore = document.getElementById("contenitore");
 let trovata = false;
 
 for (let i = 0; i < mail.length; i++){
@@ -13,10 +13,10 @@ for (let i = 0; i < mail.length; i++){
 }
 
 if(trovata){
-    scrivi.innerHTML = `mail registrata`;
+    contenitore.innerHTML = `mail registrata`;
     
 } else{
-    scrivi.innerHTML = `La mail cercata non è registrata`;
+    contenitore.innerHTML = `La mail cercata non è registrata`;
     
 }
 
